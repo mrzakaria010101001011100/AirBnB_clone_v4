@@ -4,8 +4,26 @@ header {
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
 }
+
 header .logo {
     background: url("../images/logo.png") no-repeat;
     left: 20px;
     height: 100%;
 }
+
+/* New CSS for the API status indicator */
+header #api_status {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+/* Class to indicate API availability */
+header #api_status.available {
+    background-color: #ff545f;
+}
+
